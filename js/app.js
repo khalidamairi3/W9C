@@ -1,3 +1,13 @@
+function checkAdult(tweet) {
+
+    return (tweet["age"] >= 18);
+
+}
+
+function adults_tweets() {
+   return tweets.filter(checkAdult);
+}
+
 var tweets = [ 
     { 
         message: "happy birthday!!!",
@@ -68,12 +78,4 @@ var adultsTweets = adults_tweets()
 
 console.log(adultsTweets);
 
-function checkAdult(tweet) {
 
-    return (tweet["age"] >= 18);
-
-}
-
-function adults_tweets() {
-   return tweets.filter(checkAdult);
-}
